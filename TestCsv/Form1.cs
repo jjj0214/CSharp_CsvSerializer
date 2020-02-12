@@ -98,6 +98,8 @@ namespace TestCsv
 				};
 
 				deserializedData = cs.Deserialize(stream);
+				var strTmp = deserializedData[0].ToText();
+				MessageBox.Show(strTmp);
 			}
 		}
 	}
